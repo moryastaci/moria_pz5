@@ -118,7 +118,7 @@
   }
   .showcase:before {
     content: '';
-    background: url(../lb6/bg_t.jpg) no-repeat center top/cover;
+    background: url(../lab6/bg_t.jpg) no-repeat center top/cover;
     position: absolute;
     top: 0;
     left: 0;
