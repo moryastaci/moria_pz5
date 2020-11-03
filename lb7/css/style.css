@@ -1,6 +1,5 @@
 /* CORE STYLES */
 :root {
-    /*--primary-color: rgba(13, 110, 139, 0.75);*/
     --overlay-color: rgba(14, 4, 4, 0.95);
     --menu-speed: 0.75s;
   }
@@ -29,18 +28,10 @@
     height: 100vh;
     position: relative;
   }
-  .backshow {
-    background:rgb(63, 28, 28);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: -1;
-  }
+  
   .showcase:before {
     content: '';
-    background: url(../lb7/img/bg_n.jpg) no-repeat center top/cover;
+    background: url(../img/bg_n.jpg) no-repeat center top/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -86,9 +77,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
-  
-    
+    z-index: 1; 
   }
   
   a{font-family: Verdana, Geneva, Tahoma, sans-serif;
