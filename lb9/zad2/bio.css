@@ -153,7 +153,7 @@
   }
   .showcase:before {
     content: '';
-    background: url(../zad1/img/bg_t.jpg) no-repeat center top/cover;
+    background: url(../zad2/img/bg_t.jpg) no-repeat center top/cover;
     position: absolute;
     top: 0;
     left: 0;
