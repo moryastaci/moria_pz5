@@ -40,7 +40,7 @@
   }
   .showcase:before {
     content: '';
-    background: url(../kursova/img/bg_n.jpg) no-repeat center top/cover;
+    background: url(../img/bg_n.jpg) no-repeat center top/cover;
     position: absolute;
     top: 0;
     left: 0;
