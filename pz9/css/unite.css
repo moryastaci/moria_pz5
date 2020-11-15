@@ -16,6 +16,53 @@ margin-top: 20px;}
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
   }
+  #pics {
+    overflow: auto;
+    color: black;
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 20px;
+    height: 700px;
+  }
+  #main {
+    overflow: visible;
+  }
+  .ab a{color: rgb(0, 0, 0);}
+  #au {
+    overflow: auto;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+    margin-top: 20px;
+    height: 500px;
+    background-color: black;
+  }
+  #hid {
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 40px;
+    height: 500px;
+  }
+  #scroll {
+    overflow: scroll;
+    color: rgb(0, 0, 0);
+   
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 40px;
+    height: 500px;
+  }
+  .log {padding-top: 80px;}
+  .visible{
+    overflow: visible;
+  }
+  .auto {
+    overflow: auto;
+  }
+  .hid {overflow: hidden;}
   .img1{
     position: absolute;
     left: 80px;
