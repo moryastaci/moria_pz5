@@ -10,7 +10,36 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .img1{
+    position: absolute;
+    left: 80px;
+    top: 900px;
+    z-index: -1;
+  }
+  .img2{
+    position: absolute;
+    left: 300px;
+    top: 920px;
+    z-index: 1;
+  }
+  .img3{
+    position: absolute;
+    left: 550px;
+    top: 900px;
+    z-index: -2;
+  }
+  .img4{
+    position: absolute;
+    left: 820px;
+    top: 920px;
+    z-index: 2;
+  }
+  .img5{
+    position: absolute;
+    left: 1120px;
+    top: 900px;
+    z-index: -3;
+  }
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
