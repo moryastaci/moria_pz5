@@ -1,6 +1,6 @@
 /* CORE STYLES */
 :root {
-    /*--primary-color: rgba(13, 110, 139, 0.75);*/
+    --primary-color: rgba(14, 4, 4, 0.85);
     --overlay-color: rgba(14, 4, 4, 0.95);
     --menu-speed: 0.75s;
   }
@@ -10,19 +10,96 @@
     padding: 0;
     box-sizing: border-box;
   }
- 
+  
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
   }
-
+  .onwhite {
+    color: black;
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 20px;
+  }
   .container {
     max-width: 960px;
     margin: auto;
     overflow: hidden;
-   padding-bottom: 25%;
+   padding-bottom: 10%;
+   font-size: 24pt;
   }
-
+  .members {
+   
+    background-color: #fff;
+    height: 750px;
+    margin:40px 10px 0 5%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  .members .box {
+    position: relative;
+    width:280px;
+    height:350px;
+    margin-top:10px;
+    margin-left:35px;
+    margin-right:35px;
+    margin-bottom:10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .members .box .details {
+    position: absolute;
+    text-align: center;
+    top:15px;
+    left: 10px;
+    width:260px;
+    height:320px;
+    bottom: 15px;
+    background:rgba(0,0,0,.8);
+    transform:scaleY(0);
+    transition: transform .5s;
+  }
+  .members .box:hover .details
+  {
+    transform:scaleY(1);
+  }
+  .members .box .details .name {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    color: #fff;
+  }
+  .members .box .details .name h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: rgb(243, 16, 16);
+  }
+  .members .box .imgbox {
+    position: relative;
+    overflow: hidden;
+   
+  }
+  .members .box .imgbox img {
+    width:280px;
+    height:350px;
+    max-width: 100%;
+    transition: transform 2s;
+  }
+  .members .box:hover .imgbox img
+  {
+    transform: scale(1.2);
+  }
+  .bio {
+    padding-top: 10%;
+    font-size: 16pt;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   .showcase {
     background: var(--primary-color);
     color: #fff;
@@ -30,7 +107,7 @@
     position: relative;
   }
   .backshow {
-    background:rgb(63, 28, 28);
+    background:rgb(63, 44, 28);
     width: 100%;
     position: absolute;
     top: 0;
@@ -40,7 +117,7 @@
   }
   .showcase:before {
     content: '';
-    background: url(../kursova/img/bg_n.jpg) no-repeat center top/cover;
+    background: url(..//img/bg_t.jpg) no-repeat center top/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +134,9 @@
     text-align: center;
     height: 100%;
   }
-  
+ 
+
+  }
   .showcase h1 {
     font-size: 4rem;
   }
@@ -66,20 +145,7 @@
     font-size: 1.3rem;
   }
   
-  .btn {
-    display: inline-block;
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    transition: opacity 1s ease-in-out;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    opacity: 0.7;
-  }
+ 
   
   /* MENU STYLES */
   .menu-wrap {
@@ -87,7 +153,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-  
+   
     
   }
   
@@ -117,8 +183,9 @@
     z-index: 1;
     width: 60px;
     height: 60px;
+    opacity: 30%;
     padding: 1rem;
-    background: var(--primary-color);
+    background: rgba(12, 0, 1, 0.65);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,6 +196,7 @@
     position: relative;
     flex: none;
     width: 100%;
+    opacity: 200%;
     height: 2px;
     background: #fff;
     display: flex;
