@@ -17,27 +17,20 @@ margin-top: 20px;}
     line-height: 1.4;
   }
   #pics {
-    overflow: auto;
+    overflow: visible;
     color: black;
     text-align: center;
     font-size: 24pt;
     margin-top: 20px;
-    height: 700px;
+    height: 450px;
+    
   }
   #main {
-    overflow: visible;
+    overflow: auto;
   }
   .ab a{color: rgb(0, 0, 0);}
-  #au {
-    overflow: auto;
-    color: white;
-    text-align: center;
-    font-size: 18pt;
-    margin-top: 20px;
-    height: 500px;
-    background-color: black;
-  }
-  #hid {
+  
+  #auto {
     overflow: hidden;
     color: rgb(255, 255, 255);
     background-color: black;
@@ -313,6 +306,7 @@ margin-top: 20px;}
   
   .menu-wrap .menu>div>div>ul>li>a {
     color: inherit;
+    text-align: center;
     text-decoration: none;
     transition: color 0.4s ease;
   }
